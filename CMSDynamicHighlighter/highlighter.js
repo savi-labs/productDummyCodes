@@ -1,5 +1,3 @@
-console.log("first")
-
 window.addEventListener('DOMContentLoaded', () => {
     let allTestTexts = document.querySelectorAll("[highlight-text]");
 
@@ -26,5 +24,4 @@ window.addEventListener('DOMContentLoaded', () => {
             });
         } else console.log("splitter/highlight-color attribute not found!!");
     } else console.log("testimonial-text attribute not found!!");
-
 })
