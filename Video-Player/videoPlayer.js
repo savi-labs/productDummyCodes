@@ -438,9 +438,21 @@ const FullScreen = (ele) => {
         // container.style.alignItems = "center";
 
 
-        container.style.width = "100%";
+     if(width >992)  {
+         container.style.width = "100%";
         container.style.height = "100%";
         video.style.borderRadius = "0"
+    }else{
+        // Change orientation to landscape
+      if(screen.orientation){  
+      if (screen.orientation.lock) {
+        screen.orientation.lock('landscape');
+      } else if (screen.orientation.lockOrientation) { /* Deprecated in some browsers */
+        screen.orientation.lockOrientation('landscape');
+      } else if (screen.orientation.webkitLock) { /* Deprecated in some browsers */
+        screen.orientation.webkitLock('landscape');
+      }}
+    }
 
 
         // video.style.width = "100vw";

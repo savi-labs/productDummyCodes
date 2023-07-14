@@ -1,6 +1,5 @@
 window.addEventListener("load", () => {
     let allTestTexts = document.querySelectorAll("[highlight-text]");
-    console.log(allTestTexts);
   
     if (allTestTexts.length > 0) {
       allTestTexts.forEach((el) => {
